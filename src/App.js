@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Input from './components/Input';
+import Item from './components/Item';
 
 class App extends Component {
   constructor(props) {
@@ -34,6 +35,13 @@ class App extends Component {
         <div className="to-do-wrapper">
           <Header />
           <Input todoText="" addTodo={this.addTodo}/>
+          <ul>
+            {
+              this.state.todos.map((todo) => {
+                return <Item todo={todo} key={todo.id} id={todo.id} removeTodo={this.removeTodo}/>
+              })
+            }
+          </ul>
         </div>
       </div>
     );

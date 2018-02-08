@@ -43,3 +43,25 @@ input:focus {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
 }
+
+/*Item*/
+
+.todoWrapper {
+  border-bottom: 1px solid silver;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.removeTodo {
+  margin-right: 20px;
+  margin-bottom: 10px;
+  outline: none;
+  box-shadow: none;
+  border-width: 2px;
+  border-radius: 3px;
+  border-style: solid;
+  padding: 8px;
+  color: red;
+  border-color: red;
+  background-color: transparent;
+}
