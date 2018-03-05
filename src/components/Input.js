@@ -25,7 +25,7 @@ export default class Input extends React.Component {
     return (
       <div>
         <input type="text" value={this.state.value} onChange={this.handleChange} />
-        <button className="btn btn-primary" onClick={() => this.addTodo(this.state.value)}>Submit</button>
+        <button className="btn btn-primary" onClick={() => this.addTodo(this.state.value)}>ADD</button>
       </div>
     );
   }
